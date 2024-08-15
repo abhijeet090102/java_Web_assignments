@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+	<script>
+	function error() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        if (error === 'incorrect') {
+            alert("Incorrect Username or Password !");
+        }
+    }
+	</script>
+</head>
+<body onload="error()">
+	<h2>Login</h2>
+	<form action="login" method="get">
+	User Name : <input type="text" name="username"><br>
+	Password : <input type="password" name="password"><br>
+	<input type="submit" value="login">
+	</form>
+</body>
+</html>

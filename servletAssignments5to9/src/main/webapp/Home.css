@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.title{
+	font-size: 22px;
+	
+	margin:20px 8px;
+	content:flex;
+}
+body{
+	background: lime;
+}

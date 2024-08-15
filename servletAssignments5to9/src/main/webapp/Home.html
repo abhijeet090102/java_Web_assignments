@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script>
+	function error() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        if (error === 'incorrect') {
+            alert("Incorrect Username or Password !");
+        }
+        else if(error === 'sessionExpired'){
+        	alert("Your session is Expired !");
+        }
+    }
+	</script>
+</head>
+<body onload="error()">
+	<h2>Login</h2>
+	<form action="login" method="get">
+	User Name : <input type="text" name="user"><br>
+	Password : <input type="password" name="pass"><br>
+	<input type="submit" value="login">
+	<a href="hyper">Click to go Hyper</a>
+	</form>
+	
+</body>
+</html>
